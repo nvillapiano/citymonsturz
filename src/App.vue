@@ -110,5 +110,127 @@ nav {
   }
 }
 
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+
+  &:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
+
+  &::-ms-track {
+    width: 100%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+}
+
+input[type=range] {
+  background: black;
+  height: 1rem;
+  border-radius: 4px;
+  // overflow: hidden;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 2px solid black;
+    height: 2rem;
+    width: 1rem;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    margin: 0; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  }
+}
+
+// /* Special styling for WebKit/Blink */
+// input[type=range]::-webkit-slider-thumb {
+//   -webkit-appearance: none;
+//   border: 1px solid #000000;
+//   height: 36px;
+//   width: 16px;
+//   border-radius: 3px;
+//   background: #ffffff;
+//   cursor: pointer;
+//   margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+//   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+// }
+
+// /* All the same stuff for Firefox */
+// input[type=range]::-moz-range-thumb {
+//   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+//   border: 1px solid #000000;
+//   height: 36px;
+//   width: 16px;
+//   border-radius: 3px;
+//   background: #ffffff;
+//   cursor: pointer;
+// }
+
+// /* All the same stuff for IE */
+// input[type=range]::-ms-thumb {
+//   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+//   border: 1px solid #000000;
+//   height: 36px;
+//   width: 16px;
+//   border-radius: 3px;
+//   background: #ffffff;
+//   cursor: pointer;
+// }
+
+  div[class*="-trigger"] {
+    position: absolute;
+    top: 3.3rem;
+    right: 3rem;
+    width: 2rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  div[class*="-panel"] {
+    position: relative
+  }
+
+  div[class*="-controls"] {
+    position: absolute;
+    top: 0;
+    background: aquamarine;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+
+    .control {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .icon {
+        width: 4rem;
+        height: 4rem;
+      }
+
+      input {
+        width: 100%;
+        margin-top: -0.6rem;
+      }
+    }
+
+    &.show {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
 
 </style>

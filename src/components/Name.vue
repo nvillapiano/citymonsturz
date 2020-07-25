@@ -21,7 +21,7 @@ export default {
     bottom: 4.3rem;
     width: calc(100% - 25rem);
     text-align: center;
-    margin-left: 3vw;
+    margin-left: 4vw;
   }
 
   .name-input {
