@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="117" height="152" viewBox="0 0 117 152">
+  <defs>
+    <polygon id="coffee-a" points="0 151.544 116.352 151.544 116.352 0 0 0"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#000" d="M10.4188,27.5091 L21.2378,3.0001 L87.0938,3.0001 C90.1248,3.0001 92.9038,5.0531 94.3088,8.3291 L102.5328,27.5091 L10.4188,27.5091 Z"/>
+    <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="M10.4188,27.5091 L21.2378,3.0001 L87.0938,3.0001 C90.1248,3.0001 92.9038,5.0531 94.3088,8.3291 L102.5328,27.5091 L10.4188,27.5091 Z"/>
+    <mask id="coffee-b" fill="#fff">
+      <use xlink:href="#coffee-a"/>
+    </mask>
+    <polygon fill="#000" points="3 44.854 113.352 44.854 113.352 27.509 3 27.509" mask="url(#coffee-b)"/>
+    <polygon stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" points="3 44.854 113.352 44.854 113.352 27.509 3 27.509" mask="url(#coffee-b)"/>
+    <path fill="#000" d="M10.4188,44.8538 L17.8588,137.2898 C18.3718,143.6588 23.2458,148.5438 29.0878,148.5438 L84.4138,148.5438 C90.2848,148.5438 95.1718,143.6128 95.6488,137.2078 L102.5328,44.6668 L10.4188,44.8538 Z" mask="url(#coffee-b)"/>
+    <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="M10.4188,44.8538 L17.8588,137.2898 C18.3718,143.6588 23.2458,148.5438 29.0878,148.5438 L84.4138,148.5438 C90.2848,148.5438 95.1718,143.6128 95.6488,137.2078 L102.5328,44.6668 L10.4188,44.8538 Z" mask="url(#coffee-b)"/>
+  </g>
+</svg>

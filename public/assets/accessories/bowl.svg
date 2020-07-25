@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="123" height="106" viewBox="0 0 123 106">
+  <defs>
+    <polygon id="bowl-a" points=".984 .92 11.249 .92 11.249 24.511 .984 24.511"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(0 -1)">
+    <path fill="#000" d="M119.5037,45.1581 C119.5037,77.1471 93.5707,103.0801 61.5817,103.0801 C29.5927,103.0801 3.6607,77.1471 3.6607,45.1581 L119.5037,45.1581 Z"/>
+    <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="M119.5037,45.1581 C119.5037,77.1471 93.5707,103.0801 61.5817,103.0801 C29.5927,103.0801 3.6607,77.1471 3.6607,45.1581 L119.5037,45.1581 Z"/>
+    <g transform="translate(87 11.08)">
+      <path fill="#000" d="M0.5999,34.0781 L30.2319,0.3861"/>
+      <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="M0.5999,34.0781 L30.2319,0.3861"/>
+    </g>
+    <path fill="#FFF" d="M21.4217,33.29 C22.8687,32.843 9.9367,18.245 2.3847,20.581 C-5.1673,22.917 6.3177,37.962 21.4217,33.29"/>
+    <g transform="translate(14 .08)">
+      <mask id="bowl-b" fill="#fff">
+        <use xlink:href="#bowl-a"/>
+      </mask>
+      <path fill="#FFF" d="M9.1102,24.4824 C10.3492,25.3544 13.9822,6.1824 7.5132,1.6344 C1.0452,-2.9136 -3.8268,15.3864 9.1102,24.4824" mask="url(#bowl-b)"/>
+    </g>
+  </g>
+</svg>

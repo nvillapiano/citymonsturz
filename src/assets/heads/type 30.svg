@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <polygon id="type-30-a" points="0 0 312.545 0 312.545 306.295 0 306.295"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-7 -7)">
+    <mask id="type-30-b" fill="#fff">
+      <use xlink:href="#type-30-a"/>
+    </mask>
+    <path fill="#000" d="M236.2714,38.8292 C221.4344,-13.1998 180.1654,-12.8718 165.5824,39.3922 L155.5624,75.3052 L145.1604,38.8292 C130.3224,-13.1998 89.0534,-12.8718 74.4714,39.3922 L0.0004,306.2952 L91.1114,306.2952 L221.4354,306.2952 L312.5454,306.2952 L236.2714,38.8292 Z" mask="url(#type-30-b)"/>
+  </g>
+</svg>
