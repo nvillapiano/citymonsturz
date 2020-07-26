@@ -1,7 +1,7 @@
 <template>
   <div class="info">
     <header>
-      <h1><a href="https://www.instagram.com/citymonsturz/" target="_blank" rel="noopenner">@citymonsturz</a></h1>
+      <h1><a href="https://www.instagram.com/citymonsturz/" target="_blank" rel="noopenner">@Citymonsturz</a></h1>
       <h3>
 
       </h3>

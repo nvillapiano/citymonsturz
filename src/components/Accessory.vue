@@ -59,8 +59,6 @@ export default {
     changeAccessory: function(event) {
       const accEl = event.target.dataset.accessory;
       const accessoryEl = document.getElementsByClassName('accessory')[0];
-      console.log(event.target, accEl);
-      console.log(accessoryEl);
       accessoryEl.style.backgroundImage = `url('/assets/accessories/${accEl}.svg')`;
     }
   },
