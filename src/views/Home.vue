@@ -40,74 +40,8 @@ export default {
     Info
   },
   methods: {
-    scrollBgColor: function() {
-      const app = document.getElementById('app');
-      const home = document.getElementsByClassName('home')[0];
-
-      app.addEventListener('mousedown', event => {
-        let x = event.offsetX / 5;
-        let y = event.offsetY / 5;
-        let z = x - y;
-        let r = 127;
-        let g = 255;
-        let b = 212;
-
-        let newR = r + x;
-        let newG = g - y;
-        let newB = b + z;
-
-
-        if (event.shiftKey) {
-
-          if (newR >= 255) {
-            let newR = 255;
-            home.style.backgroundColor = `rgb(${newR}, ${newB}, ${newG})`;
-          } else if (newR >= 0) {
-            let newR = 0;
-            home.style.backgroundColor = `rgb(${newR}, ${newB}, ${newG})`;
-          } else {
-            home.style.backgroundColor = `rgb(${newR}, ${newB}, ${newG})`;
-          }
-
-          if (newG >= 255) {
-            let newG = 255;
-            home.style.backgroundColor = `rgb(${newR}, ${newB}, ${newG})`;
-          } else if (newG >= 0) {
-            let newG = 0;
-            home.style.backgroundColor = `rgb(${newR}, ${newB}, ${newG})`;
-          } else {
-            home.style.backgroundColor = `rgb(${newR}, ${newB}, ${newG})`;
-          }
-
-          if (newB >= 255) {
-            let newB = 255;
-            home.style.backgroundColor = `rgb(${newR}, ${newB}, ${newG})`;
-          } else if (newB >= 0) {
-            let newB = 0;
-            home.style.backgroundColor = `rgb(${newR}, ${newB}, ${newG})`;
-          } else {
-            home.style.backgroundColor = `rgb(${newR}, ${newB}, ${newG})`;
-          }
-
-        }
-      });
-    },
-    resetBgColor: function() {
-      const home = document.getElementsByClassName('home')[0];
-      let r = 127;
-      let g = 255;
-      let b = 212;
-
-      document.addEventListener('keyup', function (event) {
-        if (event.keyCode === 9) {
-          home.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-        }
-      }, false);
-    }
   },
   mounted () {
-    this.scrollBgColor();
-    this.resetBgColor();
   }
 }
 </script>
@@ -121,7 +55,7 @@ export default {
     height: 100vh;
     width: 100vw;
     background: aquamarine;
-    transition: background-color 0.3s;
+    transition: background-color 0.1s;
   }
 
   .monstur-unit {
