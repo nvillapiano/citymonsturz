@@ -134,7 +134,7 @@ export default {
     changeY: function() {
       const itemEl = document.getElementsByClassName('item')[0];
       const itemDim = 30;
-      const itemMod = this.rangeY * .1;
+      const itemMod = this.rangeY * -0.1;
       const itemNewDim = itemDim + itemMod + 'rem';
 
       itemEl.style.top = itemNewDim;

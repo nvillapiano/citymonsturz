@@ -18,7 +18,7 @@ export default {
 
   .name {
     position: fixed;
-    bottom: 4.3rem;
+    bottom: 3.9rem;
     width: calc(100% - 25rem);
     text-align: center;
     margin-left: 4vw;
