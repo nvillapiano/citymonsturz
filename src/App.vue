@@ -54,6 +54,33 @@ a {
   font-family: 'Arial Rounded MT Bold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.15s;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 2%;
+    left: -4%;
+    width: 0;
+    height: 108%;
+    background: white;
+    z-index: -1;
+    pointer-events: none;
+    transition: all 0.15s;
+  }
+
+  &:hover {
+
+    &::before {
+      width: 108%;
+    }
+  }
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -192,9 +219,11 @@ input[type=range] {
     top: 3.3rem;
     right: 3rem;
     width: 2rem;
+    transition: all 0.3s;
 
     &:hover {
       cursor: pointer;
+      transform: rotate(45deg);
     }
   }
 

@@ -40,8 +40,6 @@ export default {
 
     a {
       display: inline-block;
-      color: black;
-      text-decoration: none;
     }
 
 
