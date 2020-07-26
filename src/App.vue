@@ -36,6 +36,11 @@
   box-sizing: border-box;
 }
 
+::selection {
+  color: black;
+  background-color: transparent;
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -105,9 +110,10 @@ nav {
 
   h1[class*="-title"] {
     font-size: 2.4rem;
-    text-align: center;
+    text-align: left;
     border-bottom: 2px solid black;
     padding-bottom: 0.4rem;
+    padding-left: 1rem;
     margin: 1rem 0;
   }
 
@@ -177,6 +183,11 @@ input[type=range] {
     cursor: pointer;
     margin: 0; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
   }
+  :active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+  }
 }
 
 // /* Special styling for WebKit/Blink */
@@ -224,6 +235,15 @@ input[type=range] {
     &:hover {
       cursor: pointer;
       transform: rotate(45deg);
+    }
+
+    &.primary {
+      width: 3.3rem;
+      top: 2.6rem;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 
