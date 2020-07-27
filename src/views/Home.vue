@@ -3,19 +3,18 @@
     <div class="monstur-unit">
       <div class="monstur">
         <Head />
-        <Face />
-        <Item />
-        <Hand left />
-        <Hand right />
+        <Face canvas />
+        <Item canvas />
+        <Hand canvas left />
+        <Hand canvas right />
       </div>
       <Name name="Nico"/>
     </div>
     <div class="control-panel">
-      <Head />
-      <Face />
-      <Item />
-      <Hand left />
-      <Hand right />
+      <Face panel />
+      <Item panel />
+      <Hand panel left />
+      <Hand panel right />
     </div>
     <Info />
   </div>

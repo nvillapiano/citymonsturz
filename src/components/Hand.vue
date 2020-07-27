@@ -1,6 +1,6 @@
 <template>
   <div class="hand-unit" :class="right ? 'right' : 'left'">
-    <nav class="hand-tools">
+    <nav v-if="panel" class="hand-tools">
       <div class="hand-trigger primary" @click="triggerControlsPrimary()">
         <svg fill="#000000" x="0px" y="0px" viewBox="0 0 75 75"
           enable-background="new 0 0 75 75">
@@ -75,8 +75,8 @@
       </div>
 
     </nav>
-    <div v-if="left" class="hand hand-left"></div>
-    <div v-if="right" class="hand hand-right"></div>
+    <div v-if="canvas && left" class="hand hand-left"></div>
+    <div v-if="canvas &&right" class="hand hand-right"></div>
   </div>
 </template>
 
@@ -84,6 +84,8 @@
 export default {
   name: 'Hand',
   props: {
+    canvas: Boolean,
+    panel: Boolean,
     left: Boolean,
     right: Boolean
   },

@@ -7,7 +7,7 @@
       </h3>
     </header>
     <footer>
-      <h3>Illustrations by <a href="https://www.instagram.com/sloetoe/" target="_blank" rel="noopener">@sloetoe</a></h3>
+      <h3>Created by <a href="https://www.instagram.com/sloetoe/" target="_blank" rel="noopener">@sloetoe</a></h3>
       <h3>Website by <a href="https://www.illapiano.com/" target="_blank" rel="noopener">@illapiano</a></h3>
       <h3>Inspired by Open Peeps <a href="https://www.instagram.com/pablostanley/" target="_blank" rel="noopener">@pablostanley</a></h3>
     </footer>

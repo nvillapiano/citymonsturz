@@ -1,6 +1,6 @@
 <template>
   <div class="face-unit">
-    <nav class="face-tools">
+    <nav v-if="panel" class="face-tools">
       <div class="face-trigger primary" @click="triggerControlsPrimary()">
         <svg fill="#000000" x="0px" y="0px" viewBox="0 0 100 100">
           <defs>
@@ -97,13 +97,17 @@
         </div>
       </div>
     </nav>
-    <div class="face"></div>
+    <div v-if="canvas" class="face"></div>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Face',
+  props: {
+    canvas: Boolean,
+    panel: Boolean
+  },
   data () {
     return {
       angryList: 6,
