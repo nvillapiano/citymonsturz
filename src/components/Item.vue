@@ -1,6 +1,6 @@
 <template>
   <div class='item-unit'>
-    <nav class='item-tools'>
+    <nav v-if="panel" class='item-tools'>
       <div class="item-trigger primary" @click="triggerControlsPrimary()">
         <svg fill="#000000" viewBox="0 0 128 128" x="0px" y="0px">
           <path
@@ -69,7 +69,7 @@
 
       <!-- <button @click='randomItem()' class='item-random'>Random item</button> -->
     </nav>
-    <div class='item'>
+    <div v-if="canvas" class='item'>
     </div>
   </div>
 </template>
@@ -90,6 +90,10 @@
 
 export default {
   name: 'item',
+  props: {
+    canvas: Boolean,
+    panel: Boolean
+  },
   data () {
     return {
       randomItem: 'doughnut',
